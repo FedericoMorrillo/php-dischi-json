@@ -11,6 +11,15 @@ li {
 }
 
 /*reset*/
+
+/*typography*/
+body {
+    color: white;
+    font-size: 1.25rem;
+}
+
+/*typography*/
+
 /*utils*/
 .flex {
     display: flex;
@@ -23,6 +32,14 @@ li {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /*utils*/
@@ -47,16 +64,48 @@ header {
 /*main*/
 main {
     padding-top: 1.875rem;
-    background-color: rgb(43, 51, 121);
+    background-color: rgb(21, 27, 77);
 }
 
 .album-img {
     width: 18.75rem;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 .album-img img {
     width: 100%;
 }
 
+ul {
+
+    padding: 1.25rem 0;
+    width: calc(100% / 3 - 10px);
+    margin: 1.25rem .3125rem 1.25rem .3125rem;
+    background-color: rgba(9, 9, 29, 0.767);
+    border-radius: .9375rem;
+}
+
 /*main*/
+
+
+/*media query*/
+@media screen and (min-width: 1600px) {
+    .album-img {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    ul {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul {
+        width: calc(100% - 10px);
+    }
+}
+
+/*media query*/
