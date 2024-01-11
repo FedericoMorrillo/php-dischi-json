@@ -9,6 +9,43 @@
 </head>
 
 <body>
+    <div id="app">
+        <header class="flex align-center">
+
+            <!--logo-->
+            <div class="logo">
+                <img src="src/img/logo.jpg" alt="">
+            </div>
+
+            <!--/logo-->
+        </header>
+
+        <main>
+
+            <!--contenitore-->
+            <div class="container">
+
+                <ul v-for="album in albums">
+                    <li class="album-img">
+                        <img :src="album.img" :alt="album.name">
+                    </li>
+                    <li>
+                        {{album.name}}
+                    </li>
+                    <li>
+                        {{album.band}}
+                    </li>
+                    <li>
+                        {{album.anno}}
+                    </li>
+                </ul>
+
+            </div>
+            <!--/contenitore-->
+
+        </main>
+    </div>
+
 
     <!--vue-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -21,6 +58,7 @@
     <!--js-->
     <script src="src/js/main.js"></script>
     <!--/js-->
+
 </body>
 
 </html>

@@ -6,4 +6,57 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 /*reset*/
+/*utils*/
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*utils*/
+
+/*header*/
+header {
+    height: 4.375rem;
+    background-color: rgb(20, 20, 20);
+}
+
+.logo {
+    width: 50px;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*header*/
+
+/*main*/
+main {
+    padding-top: 1.875rem;
+    background-color: rgb(43, 51, 121);
+}
+
+.album-img {
+    width: 18.75rem;
+    object-fit: cover;
+}
+
+.album-img img {
+    width: 100%;
+}
+
+/*main*/
